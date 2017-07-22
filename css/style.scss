@@ -1,0 +1,40 @@
+@import 'functions.scss';
+@import 'mixins';
+
+body {
+    background-color: $color-bg * 0.9;
+    @include test(30px, 20px);
+    height: 200%;
+}
+
+html {
+    /* @include linear-gradient(45deg, blue 0%, red 100%); */
+}
+
+.container {
+    background-color: $color-bg * 0.6;
+    /* li:hover { @include find; } */
+    &:hover {}
+}
+
+.tab-content {
+    .tab-pane {
+        @include test($left: 50px, $top: 10px);
+        @include transition($time: 1s);
+        &:hover {
+            color: blue;
+        }
+        color: white;
+    }
+}
+
+#second {
+    &:hover {
+        @include find;
+    }
+    @include size($width: 15em, $height: 10em, $mode: null);
+    background-color: $color-bg;
+    /* @include border-box; */
+    @include radius;
+    @include shadow;
+}

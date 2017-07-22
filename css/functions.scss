@@ -1,0 +1,6 @@
+$color-bg: khaki;
+@mixin test($top: 20px, $left: 50px) {
+	color: red;
+	padding-top: $top;
+	padding-left: $left;
+}

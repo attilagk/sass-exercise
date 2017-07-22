@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            // run this function when the document is loaded
+            window.onload = function() {
+
+                // create a couple of elements in an otherwise empty HTML page
+                var heading = document.createElement("h1");
+                var heading_text = document.createTextNode("Big Head!");
+                heading.appendChild(heading_text);
+                document.body.appendChild(heading);
+            }
+        </script>
+
+<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">	
+		<ul id="tab" class="nav nav-tabs">
+		  <li class="active"><a href="#tab1ID" data-toggle="tab">Tab 1 title</a></li>
+		  <li><a href="#tab2ID" data-toggle="tab">Tab 2 title</a></li>
+		  <li><a href="#tab3ID" data-toggle="tab">Tab 3 title</a></li>
+		</ul>
+		<div id="myTabContent" class="tab-content">
+		  <div class="tab-pane fade in active" id="tab1ID">
+		    <p>Tab 1 content</p>
+		  </div>
+		  <div class="tab-pane fade" id="tab2ID">
+		    <p id="second">Tab 2 content</p>
+		  </div>
+		  <div class="tab-pane fade" id="tab3ID">
+		    <p>Tab 3 content</p>
+		  </div>
+</body>
+</html>
